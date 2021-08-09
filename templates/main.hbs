@@ -1,0 +1,23 @@
+<div class="flex justify-center flex-col items-center">
+    <div class='flex mb-8'>
+       <a href="https://www.facebook.com/fsgeekk">
+            <img src="/public/facebook.svg" alt="facebook icon" class="w-8">
+       </a> 
+       <a href="https://www.instagram.com/fsgeek/" class="ml-3">
+            <img src="/public/instagram.svg" alt="instagram icon" class="w-8">
+       </a> 
+       <a href="https://twitter.com/fsgeek_pl" class="ml-3">
+            <img src="/public/twitter.svg" alt="twitter icon" class="w-8">
+       </a> 
+    </div>
+    {{#each links}}
+    <div class="w-full mt-3 md:w-1/2">
+        <a href={{link}}>
+        <button class='btn btn-white'>{{title}}</button>
+        </a>
+    </div>
+    {{/each}}
+</div>
+
+
+

@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "start": "npm run start:app & npm run watch:css & npm run watch:files",
+    "start:app": "NODE_ENV=development nodemon app.js",
+    "watch:css": "npm run build:css -- --watch",
+    "watch:files": "livereload -e 'hbs, css' -d -x templates/**/*.css",
+    "build:css": "postcss templates/styles/*.css -d public",
+    "prod:css": "NODE_ENV=production npm run build:css"
+  },
+  "dependencies": {
+    "fastify": "3.15.0",
+    "fastify-env": "2.1.1",
+    "fastify-plugin": "2.3.4",
+    "fastify-static": "4.0.1",
+    "glob": "7.1.7",
+    "handlebars": "4.7.7",
+    "livereload": "0.9.3",
+    "mongodb": "4.0.1",
+    "point-of-view": "4.14.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.2.5",
+    "nodemon": "2.0.7",
+    "postcss": "8.2.15",
+    "postcss-cli": "8.3.1",
+    "tailwindcss": "2.1.2"
+  },
+  "nodemonConfig": {
+    "verbose": true
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="antialiased" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/styles.css">
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon"/>
+  <title>Linki FSGeek</title>
+</head>
+<body class="w-screen h-screen background flex flex-col justify-center">
+    {{{body}}}
+</body>
+
+{{#if dev}}
+<script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+  ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+{{/if}}
+</html>
